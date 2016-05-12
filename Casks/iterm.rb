@@ -2211,7 +2211,7 @@ cask 'iterm' do
     <key>LeftOption</key>
     <integer>2</integer>
     <key>LoadPrefsFromCustomFolder</key>
-    <true/>
+    <false/>
     <key>MaxVertically</key>
     <false/>
     <key>NSFontPanelAttributes</key>
