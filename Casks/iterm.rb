@@ -3251,10 +3251,6 @@ cask 'iterm' do
             <string>kNextWindowPointerAction</string>
         </dict>
     </dict>
-    <key>PrefsCustomFolder</key>
-    <string>~/.config/iterm2/</string>
-    <key>Print In Black And White</key>
-    <true/>
     <key>PromptOnQuit</key>
     <false/>
     <key>QuitWhenAllWindowsClosed</key>
