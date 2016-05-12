@@ -6,7 +6,7 @@ cask 'iterm' do
   stage_only true
 
   depends_on cask: 'caskroom/homebrew-versions/iterm2-beta'
-  depends_on cask: 'font-sauce-code-powerline'
+  depends_on cask: 'caskroom/homebrew-fonts/font-sauce-code-powerline'
 
   plist=<<EOF
 <?xml version="1.0" encoding="UTF-8"?>
