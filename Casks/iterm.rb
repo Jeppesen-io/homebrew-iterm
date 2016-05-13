@@ -5,13 +5,13 @@ cask 'iterm' do
     `defaults delete com.googlecode.iterm2.plist`
   end
 
-  version '0.4'
+  version '0.5'
   url 'https://github.com/Jeppesen-io/homebrew-iterm/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-iterm'
   sha256 :no_check
 
   require 'fileutils'
-  FileUtils::mkdir_p ENV['HOME'] + '/.local/iterm'
+  FileUtils::mkdir_p ENV['HOME'] + '/.local/logs'
 
 
   depends_on cask: 'caskroom/homebrew-versions/iterm2-beta'
