@@ -12,7 +12,7 @@ cask 'iterm' do
   FileUtils::mkdir_p ENV['HOME'] + '/.local/iterm'
   FileUtils::mkdir_p ENV['HOME'] + '/.l'
 
-  artifact 'homebrew-iterm-master/dot-files/com.googlecode.iterm2.plist', target: "/Library/Preferences/com.googlecode.iterm2.plist"
+  artifact 'homebrew-iterm-master/dot-files/com.googlecode.iterm2.plist', target: ENV['HOME'] + "/Library/Preferences/com.googlecode.iterm2.plist"
 
   depends_on cask: 'caskroom/homebrew-versions/iterm2-beta'
   depends_on cask: 'caskroom/homebrew-fonts/font-sauce-code-powerline'
