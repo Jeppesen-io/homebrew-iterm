@@ -17,12 +17,12 @@ cask 'iterm' do
   depends_on cask: 'caskroom/homebrew-versions/iterm2-beta'
   depends_on cask: 'caskroom/homebrew-fonts/font-sauce-code-powerline'
 
-  artifact 'homebrew-iterm-master/dot-files/com.googlecode.iterm2.plist', target: ENV['HOME'] + "/Library/Preferences/com.googlecode.iterm2.plist2"
+  artifact 'homebrew-iterm-master/dot-files/com.googlecode.iterm2.plist', target: ENV['HOME'] + "/Library/Preferences/com.googlecode.iterm2.plist.custom"
 
   postflight do
 
     # Load it up!
-    `defaults read -app iTerm`
+    `defaults import  -app iTerm #{ENV['HOME']}/Library/Preferences/com.googlecode.iterm2.plist.custom`
 
   end
 
