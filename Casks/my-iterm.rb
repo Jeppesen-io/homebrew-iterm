@@ -1,4 +1,4 @@
-cask 'iterm' do
+cask 'my-iterm' do
 
   preflight do
     # Delete old settings
