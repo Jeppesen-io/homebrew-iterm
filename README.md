@@ -1,5 +1,5 @@
 # homebrew-iterm
-### Wraps `iterm2-beta` cask
+### Wraps `iterm2` cask
 iTerm, for me! Nothing crazy, just lots of little tweaks.
 
 * True color support
