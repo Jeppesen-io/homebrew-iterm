@@ -5,7 +5,7 @@ cask 'my-iterm' do
     `defaults delete com.googlecode.iterm2.plist`
   end
 
-  version '1.0'
+  version '1.1'
   url 'https://github.com/Jeppesen-io/homebrew-iterm/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-iterm'
   sha256 :no_check
@@ -22,7 +22,7 @@ cask 'my-iterm' do
   postflight do
 
     # Load it up!
-    `defaults import  -app iTerm #{ENV['HOME']}/Library/Preferences/com.googlecode.iterm2.plist.custom`
+    `defaults import com.googlecode.iterm2 #{ENV['HOME']}/Library/Preferences/com.googlecode.iterm2.plist.custom`
 
   end
 
