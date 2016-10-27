@@ -5,7 +5,7 @@ cask 'my-iterm' do
     `defaults delete com.googlecode.iterm2`
   end
 
-  version '1.2'
+  version '1.3'
   url 'https://github.com/Jeppesen-io/homebrew-iterm/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-iterm'
   sha256 :no_check
@@ -15,7 +15,7 @@ cask 'my-iterm' do
 
 
   depends_on cask: 'iterm2'
-  depends_on cask: 'caskroom/homebrew-fonts/font-sauce-code-powerline'
+  depends_on cask: 'caskroom/fonts/font-sauce-code-powerline'
 
   artifact 'homebrew-iterm-master/dot-files/com.googlecode.iterm2.plist', target: ENV['HOME'] + "/Library/Preferences/com.googlecode.iterm2.plist.custom"
 
