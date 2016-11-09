@@ -5,7 +5,7 @@ cask 'my-iterm' do
     `defaults delete com.googlecode.iterm2`
   end
 
-  version '1.5'
+  version '1.5.1'
   url 'https://github.com/Jeppesen-io/homebrew-iterm/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-iterm'
   sha256 :no_check
@@ -23,7 +23,7 @@ cask 'my-iterm' do
   postflight do
 
     # Load it up!
-    `delete com.googlecode.iterm2`
+    `defaults delete com.googlecode.iterm2`
     `defaults write com.googlecode.iterm2 PrefsCustomFolder -string ~/.config/iterm`
     `defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -int 1`
 
