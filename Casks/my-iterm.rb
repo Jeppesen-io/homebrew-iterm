@@ -5,7 +5,7 @@ cask 'my-iterm' do
     `defaults delete com.googlecode.iterm2`
   end
 
-  version '1.6.4'
+  version '1.6.5'
   url 'https://github.com/Jeppesen-io/homebrew-iterm/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-iterm'
   sha256 :no_check
@@ -24,6 +24,7 @@ cask 'my-iterm' do
 
     # Load it up!
     `defaults delete com.googlecode.iterm2`
+    `killall cfprefsd` # clear perf cache
     `defaults write com.googlecode.iterm2 PrefsCustomFolder -string ~/.config/iterm`
     `defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -int 1`
     `defaults write com.googlecode.iterm2 moveToApplicationsFolderAlertSuppress -int 1`
