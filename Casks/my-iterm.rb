@@ -5,7 +5,7 @@ cask 'my-iterm' do
     `defaults delete com.googlecode.iterm2`
   end
 
-  version '1.6'
+  version '1.6.3'
   url 'https://github.com/Jeppesen-io/homebrew-iterm/archive/master.zip'
   homepage 'https://github.com/Jeppesen-io/homebrew-iterm'
   sha256 :no_check
